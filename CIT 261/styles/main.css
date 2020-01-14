@@ -1,0 +1,39 @@
+.nav {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    margin: 4px;
+    width: 75%;
+    background-color: #1c2742;
+    display: inline-block;
+    color: #a1c0d1;
+}
+
+body {
+    background-color: #a1c0d1;
+    color: #020812;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Zapfino", cursive;
+    margin-bottom: -20px;
+}
+
+h2 {
+    letter-spacing: 3px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+h3 {
+    text-align: center;
+    background-color: #1c2742;
+    color: #a1c0d1;
+    width: 100%;
+    padding: 2px;
+}

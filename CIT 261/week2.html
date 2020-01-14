@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannah Rogers' Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hannah Rogers</h1>
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Week 2</h2>
+        <h3>Reading Notes</h3>
+
+        <h3>Chapter 2: Programming Basics</h3>
+        <p>Variables</p>
+        <ul>
+            <li>var is older version of declaring variables</li>
+            <li>use let instead of var</li>
+        </ul>
+
+        <p>Scope</p>
+        <ul>
+            <li>Global Scope: accessible everywhere in the program. Not considered good practice.</li>
+            <li>Local Scope: any variables defined inside a block are only available inside that block.</li>
+        </ul>
+
+        <p>Converting/Parsing</p>
+        <ul>
+            <li>Strings to Numbers: Number('str');</li>
+            <li>Numbers to Strings: String(num);</li>
+            <li>Parsing Numbers: parseInt() or parseFloat()</li>
+        </ul>
+
+        <p>Template Literals</p>
+        <ul>
+            <li>Use the backtick '`' to deliminate a string (can use any combo of quotes within the string).</li>
+        </ul>
+
+        <h3>Chapter 3: Arrays, Logic, and Loops</h3>
+        <p>Array Methods</p>
+        <ul>
+            <li>array.length; - find the length of an array</li>
+            <li>pop() - remove the last item from an array</li>
+            <li>shift() - removes the first item in an array</li>
+            <li>push() - appends an new value to the end of the array</li>
+            <li>unshift() - appends a new value to the beginning of an array</li>
+            <li>concat() - merge an array with one or more arrays</li>
+            <li>spread ... - spread the elements of two arrays and put them in a new array</li>
+            <li>join() - can be used to turn the array into a string. Default is separated with commas</li>
+            <li>slice() - chops out a slice of an original array, start and end index</li>
+            <li>splice() - removes item from an array then inserts new items.</li>
+            <li>reverse() - reverse the order of an array</li>
+            <li>sort() - sort the order of an array</li>
+            <li>indexof() - returns the index of an item</li>
+            <li>includes() - returns a boolean if array contains an element</li>
+        </ul>
+
+        <h3>Chapter 4: Functions</h3>
+        <p>Ways to declare a function</p>
+        <ul>
+            <li>function functionName(){</li>
+            <li>const variiable = function(){</li>
+            <li>const variable = new Function('statment;');</li>
+            <li>Arrow Functions: const square = x => x*x;</li>
+        </ul>
+
+        <p>Callbacks</p>
+        <ul>
+            <li>A function that is passed as an argument to another.</li>
+            <li>Example: function functionName(x, callback)</li>
+        </ul>
+    </main>
+
+    <footer></footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
