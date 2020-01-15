@@ -1,0 +1,13 @@
+/* desktop view ********************************/
+
+@media (min-width: 60em) {
+/* three columns *******************************/
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/** changes third column back to original span */
+section:nth-child(3) {
+    grid-column: span 1;
+}
+}

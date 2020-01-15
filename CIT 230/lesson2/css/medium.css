@@ -1,0 +1,17 @@
+/* tablet view ************************************/
+
+@media (min-width: 37.5em) {
+    /* two columns ********************************/
+main {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* changes third column to span whole screen */
+section:nth-child(2) {
+    display: block;
+}
+
+section:nth-child(3) {
+    grid-column: span 2;
+}
+}
