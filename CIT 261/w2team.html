@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 2 Team Activity</title>
+    <script>
+        function getInput() {
+            let input = document.getElementById('input').value;
+            if (input != NaN) {
+                let sum = addNumbers(input);
+                document.getElementById('output').innerHTML = sum;
+            }
+            else {
+                document.getElementById('output').innerHTML = "Enter a number."
+            }
+        }
+
+        function addNumbers(num) {
+            let sum = 0;
+            for(let i = 1; i <= num; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        function addingMachine() {
+            let input1 = parseInt(document.getElementById('input').value);
+            let input2 = parseInt(document.getElementById('input2').value);
+            let sum = input1 + input2;
+            document.getElementById('output2').innerHTML = sum;
+        }
+
+        //stretch
+
+        function multiplyNums(input1, input2) {
+            return input1 * input2;
+        }
+
+        const divide = function(input1, input2) {
+            return input1 / input2;
+        }
+
+        const subtract = (input1, input2) => input1 - input2;
+
+    </script>
+</head>
+<body>
+    <h2>Group 6 Week 2 Activity</h2>
+    Enter a number: <input type="text" id="input"><br>
+    Enter another number:<input type="text" id="input2"><br><br>
+    Add numbers up to first number: <button type="button" onclick="getInput()">Click</button><br>
+    <div id="output"></div><br>
+    Add both numbers together:<button type="button" onclick="addingMachine()">+</button>
+    <div id="output2"></div>
+</body>
+</html>
