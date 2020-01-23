@@ -1,0 +1,42 @@
+@media only screen and (min-width: 37.5em)
+{
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    section {
+        display: flex;
+    }
+
+    #color-scheme {
+        height: 17rem;
+    }
+
+    div {
+        border: solid;
+        border-right: none;
+        padding: 10px;
+    }
+    
+    #last {
+        border-right: solid;
+    }
+
+    #typography {
+        display: flex;
+    }
+
+    #typography div {
+        flex: 1 1 100%;
+    }
+
+
+}

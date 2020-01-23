@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannah Rogers' Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hannah Rogers</h1>
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Week 3</h2>
+            <h3>Reading Notes</h3>
+        </section>
+
+        <h3>Article - <a href="https://javascript.info/object-methods">Object methods, "this"</a>:</h3>
+        <p>Method Shorthand</p>
+        <ul>
+            <li>user = {
+                sayHi() { // same as "sayHi: function()"
+                  alert("Hello");
+                }</li>
+        </ul>
+
+        <p>"this" in Methods</p>
+        <ul>
+            <li>Used to access the object.</li>
+            <li>It can be used in any function.</li>
+        </ul>
+
+        <p>Summary</p>
+        <ul>
+            <li>When a function is declared, it may use "this", but that "this" has no value until the function is called.</li>
+            <li>A function can be copied between objects.</li>
+            <li>When a function is called in the "method" syntax: object.method(), the value of "this" during the call is object.</li>
+        </ul>
+
+        <h3>Chapter 5: Objects</h3>
+        <p>Object Literals</p>
+        <ul>
+            <li>An object in JavaScript is a self-contained set of related values and functions. One way to think about an object is that it’s like a dictionary where you look up a property name and see a value.</li>
+            <li>const objectName = {};</li>
+        </ul>
+
+        <p>Adding properties to objects</p>
+        <ul>
+            <li>object.property = 'new property value';</li>
+        </ul>
+
+        <p>Object Methods</p>
+        <ul>
+            <li>Function inside a method.</li>
+            <li>function() {}</li>
+        </ul>
+
+        <p>JSON</p>
+        <ul>
+            <li>a string representation of the object literal notation, with these key differences:
+                <ol>
+                    <li>Property names must be double-quoted</li>
+                    <li>Permitted values are double-quoted strings, numbers, true, false, null, arrays and objects</li>
+                    <li>Functions are not permitted values</li>
+                </ol>
+            </li>
+            <li>The "parse()" method takes a string of data in JSON format and returns a JS object</li>
+            <li>The "stringify()" method takes a JS object and returns a strong of JSON data</li>
+        </ul>
+
+        <h3>Chapter 6: The Document Object Model</h3>
+        <p>DOM intro</p>
+        <ul>
+            <li>represents an HTML document as a network of connected notes that form a tree-like structure.</li>
+            <li>provides several methods that allow us to access any element on a page.</li>
+        </ul>
+
+        <p>Getting elements</p>
+        <ul>
+            <li>use document.name to access elements of a page.</li>
+            <li>Shortcut Methods
+                <ul>
+                <li>document.body - returns the body element of a web page</li>
+                <li>document.images - returns a node list of all the images</li>
+                <li>etc.</li>
+            </ul>
+            </li>
+            <li>document.getElementById(), getElementsByTagName(), getElementsByClassName(), querySelector(), querySelectorAll()</li>
+        </ul>
+
+        <p>Navigating the DOM</p>
+        <ul>
+            <li>can use properties like childNodes, paredNode, firstChild, nextSibling, etc.</li>
+        </ul>
+
+        <p>Getting and setting an element's attributes</p>
+        <ul>
+            <li>The "getAttribute()" method returns the value of the attribute provided as an argument</li>
+            <li>The "setAttribute()" takes two arguments: the attribute you wish to change, and the new value.</li>
+        </ul>
+
+        <p>Updating the DOM</p>
+        <ul>
+            <li>const variable = document.createElement('li'); variable.textContent = 'variable';</li>
+        </ul>
+
+        <p>Changing the CSS of an element</p>
+        <ul>
+            <li>variable.style.property = "vlaue";</li>
+        </ul>
+
+        <h3>Chapter 7: Events</h3>
+        <p>Events intro</p>
+        <ul>
+            <li>An event listener will let the program know when an event happens, then the program can respond.</li>
+            <li>Allows programs to continue with the program without constantly checking for the event.</li>
+        </ul>
+
+        <p>Adding event listeners</p>
+        <ul>
+            <li>Example: document.body.addEventListener('click', doSomething);</li>
+            <li>when a user 'clicks' on the body the program will run doSomething()</li>
+        </ul>
+
+        <p>The Event Object</p>
+        <ul>
+            <li>event.type - returns the type of event that occurred</li>
+            <li>event.target - returns a reference to the node that fired the event</li>
+            <li>event.pageX, event.pageY - show the number of pixels from the left and top where the event took place in the document</li>
+        </ul>
+
+        <p>Mouse, keyboard and touch events</p>
+        <ul>
+            <li>Mouse: click, mousedown, mouseup, dblclick, mouseover, mouseout, mousemove</li>
+            <li>Keyboard: keydown, keypress, keyup</li>
+            <li>Touch: touchstart, click (300ms delay), touchend, touchmove, touchenter, touchleave, touchcancel</li>
+        </ul>
+
+        <p>Removing event listeners</p>
+        <ul>
+            <li>removeEventListener()</li>
+        </ul>
+
+        <p>Stopping default behavior</p>
+        <ul>
+            <li>preventDefault()</li>
+        </ul>
+
+        <p>Event propagation</p>
+        <ul>
+            <li>The order event fire on each element</li>
+            <li>Bubbling: the even fires on the element clicked on first, the bubbles up the document tree, firing an event on each parent element until it reaches the root node.</li>
+            <li>Capturing: starts by firing an event on the root element, then propagates downwards, firing an even on each child element until it reaches the target element that was clicked on.</li>
+        </ul>
+    </main>
+
+    <footer></footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
