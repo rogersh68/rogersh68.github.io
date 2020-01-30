@@ -1,0 +1,111 @@
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', consolas, sans-serif;
+    background-color: #E8F1F2;
+}
+
+header {
+    background-color: #8AA1B1;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    color: #000000;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.motto {
+    color: #464655;
+    
+    font-style: italic;
+}
+
+h2 {
+    color: #1F2041;
+}
+
+nav {
+    margin: 0 auto;
+	background-color: #1F2041;
+}
+
+ul {
+    margin-top: 0;
+}
+
+.navigation {
+	list-style: none;
+    padding: 0;
+}
+
+.navigation li a {
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #ffffff;
+	padding: 0.75rem;
+	text-align: left;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3)
+}
+.navigation a:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	font-weight: 700;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-style: italic;
+}
+
+.responsive li {
+	display: block;
+}
+
+main {
+    display: grid;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #2274A5;
+    padding: 15px;
+    background-color: #E8F1F2;
+    color: #464655;
+    font-style: italic;
+}
+
+footer {
+    padding: 5px;
+    background-color: #1F2041;
+    color: #ffffff;
+    text-align: center;
+}

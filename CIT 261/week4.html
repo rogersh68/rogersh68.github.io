@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannah Rogers' Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!--Hero form error element (makes sure it isn't visible initially, then stand out-->
+    <style>
+        .error{
+            background: #f99;
+            border: #900 1px solid;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hannah Rogers</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week1.html">Week 1</a></li>
+            <li><a href="week2.html">Week 2</a></li>
+            <li><a href="week3.html">Week 3</a></li>
+            <li class="active"><a href="week4.html">Week 4</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Week 4</h2>
+            <h3>Reading Notes</h3>
+        </section>
+
+        <h3>Chapter 8: Forms</h3>
+        <p>Form controls</p>
+        <ul>
+            <li>Forms have controls such as input fields, select menus, and buttons.</li>
+        </ul>
+
+        <p>Accessing form elements</p>
+        <ul>
+            <li>const form = document.forms[0]
+            <li>the document.forms property returns an HTML collection of all the forms in the document in the order
+                they appear in the document.</li>
+            <li>the [0] returns the first form object.</li>
+            <li></li>
+        </ul>
+
+        <p>Form properties and methods</p>
+        <ul>
+            <li>form.submit()
+            <li>will submit the form automatically. (doesn't trigger the submit event)</li>
+            </li>
+            <li>form.reset()
+            <li>will reset all the form controls back to their initial values.</li>
+            <li>can also use a type attribute of reset in the html button tag.</li>
+            </li>
+            <li>form.action
+            <li>this property can be used to set the action attribut of a form so its sent to a different URL.</li>
+            </li>
+        </ul>
+
+        <p>Form events</p>
+        <ul>
+            <li>focus - occurs when an element is focused on.</li>
+            <li>blur - occurs when the user moves the focus away from the element.</li>
+            <li>change - occurs when the user moves the focus away from the element after changing it.</li>
+        </ul>
+
+        <p>Submitting a form</p>
+        <ul>
+            <li>Usually the submit event will send the content of the form to the server to be processed</li>
+        </ul>
+
+        <p>Retrieving and changing values from a form</p>
+        <ul>
+            <li>Text input element objects have a value property that can be used to retrieve the text inside a field.
+            </li>
+            <li>ex: input.value</li>
+            <li>can also use the placeholder attribute</li>
+        </ul>
+
+        <p>Form validation</p>
+        <ul>
+            <li>JavaScript validation should be used to enhance the user experience when filling in a form by giving feedback about any errors before it’s submitted.</li>
+        </ul>
+
+        <h3>Chapter 12: Object-Oriented Programming in JavaScript</h3>
+        <p>Intro to OOP</p>
+        <ul>
+            <li>Encapsulation: the inner workings are kept hidden inside the object and only the essential functionalities are exposed to the end user.</li>
+            <li>Polymorphism: the same process can be used for different objects. </li>
+            <li>Inheritance: taking the features of one object then adding some new features.</li>
+        </ul>
+
+        <p>Constructor functions</p>
+        <ul>
+            <li>This is a function that defines the properties and methods of an object.</li>
+            <li>The easiest way to create a new object is to use the literal syntax:
+<br>
+                const literalObject = {};
+                << {}
+                <br><br>
+                It is also possible to use the Object constructor function:
+                <br>
+                constructedObject = new Object();
+                << {}
+                <br><br>
+                A literal is still considered to be an instance of the Object constructor:
+                <br>
+                literalObject instanceof Object;
+                << true
+                <br><br>
+                Similarly, the easiest way to create an array is to use the literal syntax, like so:
+                <br>
+                const literalArray = [1,2,3];
+                << [1, 2, 3]
+                <br><br>
+                But an alternative is to use the Array constructor function:
+                <br>
+                constructedArray = new Array(1,2,3);
+                << [1, 2, 3]</li>
+        </ul>
+
+        <p>Using classes in JavaScript</p>
+        <ul>
+            <li>classes are preferred to constructor functions. They will throw errors.</li>
+            <li>class ClassName { ... }</li>
+            <li>static keyword used to create methods (class methods == static methods)</li>
+        </ul>
+
+        <p>Prototypes</p>
+        <ul>
+            <li>Every class has a prototype property that is shared by every instance of the class. So any properties or methods of a class’s prototype can be accessed by every object instantiated by that class.</li>
+            <li>You can use the prototype property of a class to add extra mehtods and properties after the class has been created.</li>
+            <li>should be used to define any properties that will remain the same for every instance of the class.</li>
+        </ul>
+
+        <p>Public and Private methods</p>
+        <ul>
+            <li>Methods and properties are said to be public because they can be queried directly and changed by assignment.</li>
+            <li>use the concept of variable scope to keep some properties and methods private inside of a class declaration.</li>
+        </ul>
+
+        <p>Adding methods to built-in objects</p>
+        <ul>
+            <li>The process is known as monkey-patching.</li>
+            <li>Adds more functionality to built-in objects</li>
+        </ul>
+
+        <p>Mixins</p>
+        <ul>
+            <li>A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by ‘mixing’ basic objects together.</li>
+            <li>Basic mixin functionality is provided by the Object.assign() method.</li>
+        </ul>
+
+        <h3>Chapter 15: Modern JavaScript</h3>
+        <p>Modular JavaScript</p>
+        <ul>
+            <li>A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules. </li>
+        </ul>
+
+        <h3 class="example">Examples</h3>
+        <h3>Chapter 8:</h3>
+        <p><em>SEARCH</em></p>
+        <form name='search' action='/search'>
+            <input name='searchInput' placeholder="Search Here">
+            <button type='submit'>Search</button>
+        </form>
+        <br>
+        <p><em>HERO FORM</em></p>
+        <form id='hero'>
+            <label for='heroName'>Name:
+                <input type='text' id='heroName' name='heroName' autofocus placeholder='Your Super Hero Name'
+                    maxlength=32 required>
+            </label>
+
+            <br>
+
+            <!--using password type attribute (conceals input)-->
+            <label for='realName'>Real Name:
+                <input type='password' name='realName' id='realName'>
+            </label>
+
+            <br>
+
+            <!--using checkbox type attribute-->
+            <p>Super Powers:</p>
+            <label for='flight'>Flight:
+                <input type='checkbox' id='flight' value='Flight' name='powers'>
+            </label>
+
+            <label for='strength'>Super Strength:
+                <input type='checkbox' id='strength' value='Strength' name='powers'>
+            </label>
+
+            <label for='speed'>Super Speed:
+                <input type='checkbox' id='speed' value='Super Speed' name='powers'>
+            </label>
+
+            <label for='energy'>Energy Blasts:
+                <input type='checkbox' id='energy' value='Energy Blasts' name='powers'>
+            </label>
+
+            <label for='telekinesis'>Telekinesis:
+                <input type='checkbox' id='telekinesis' value='Telekinesis' name='powers'>
+            </label>
+
+            <br>
+
+            <!--using radio type attribute-->
+            <p>What type of hero are you?</p>
+            <label for='hero'>Hero:
+                <input type='radio' name='category' value='Hero' id='hero'>
+            </label>
+
+            <label for='villain'>Villain:
+                <input type='radio' name='category' value='Villain' id='villain'>
+            </label>
+
+            <label for='anti-hero'>Anti-Hero:
+                <input type='radio' name='category' value='Antihero' id='anti-hero'>
+            </label>
+
+            <br>
+
+            <!--using number type attribute-->
+            <label for='age'>Age:
+                <input type='number' id='age' name='age' min=0 step=1>
+            </label>
+
+            <br>
+
+            <!--Select Drop-Down List-->
+            <label for='City'>Base of Operations:
+                <select name='city' id='city'>
+                    <option value='' selected>Choose a City</option>
+                    <option value='Metropolis'>Metropolis</option>
+                    <option value='Gotham City'>Gotham City</option>
+                    <option value='Keystone City'>Keystone City</option>
+                    <option value='Coast City'>Coast City</option>
+                    <option value='Star City'>Star City</option>
+                </select>
+            </label>
+
+            <br>
+
+            <!--Text Area-->
+            <label for='origin'>Origin Story:
+                <textarea id='origin' name='origin' rows='20' cols='60'></textarea>
+            </label>
+
+            <br>
+
+            <button type='submit'>Submit</button>
+        </form>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/w4ch8.js"></script>
+    <script src="scripts/w4ch12.js"></script>
+</body>
+
+</html>
