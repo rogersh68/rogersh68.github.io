@@ -9,23 +9,24 @@
     }
 
     .navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* needed because of state in small view */
-		flex: 1 1 100%;
-	}
-	
-	
-	.navigation li:first-child {
-		display: none;
-	}
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
+    .navigation li:first-child {
+        display: none;
+    }
 
     main {
         max-width: 775px;
         margin: auto;
-    } 
-    
+    }
+
     footer {
         max-width: 825px;
         margin: auto;

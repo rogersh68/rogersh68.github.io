@@ -10,7 +10,7 @@
 
     <!--Hero form error element (makes sure it isn't visible initially, then stand out-->
     <style>
-        .error{
+        .error {
             background: #f99;
             border: #900 1px solid;
             display: none;
@@ -91,13 +91,15 @@
 
         <p>Form validation</p>
         <ul>
-            <li>JavaScript validation should be used to enhance the user experience when filling in a form by giving feedback about any errors before it’s submitted.</li>
+            <li>JavaScript validation should be used to enhance the user experience when filling in a form by giving
+                feedback about any errors before it’s submitted.</li>
         </ul>
 
         <h3>Chapter 12: Object-Oriented Programming in JavaScript</h3>
         <p>Intro to OOP</p>
         <ul>
-            <li>Encapsulation: the inner workings are kept hidden inside the object and only the essential functionalities are exposed to the end user.</li>
+            <li>Encapsulation: the inner workings are kept hidden inside the object and only the essential
+                functionalities are exposed to the end user.</li>
             <li>Polymorphism: the same process can be used for different objects. </li>
             <li>Inheritance: taking the features of one object then adding some new features.</li>
         </ul>
@@ -106,31 +108,31 @@
         <ul>
             <li>This is a function that defines the properties and methods of an object.</li>
             <li>The easiest way to create a new object is to use the literal syntax:
-<br>
+                <br>
                 const literalObject = {};
-                << {}
+                << {} 
                 <br><br>
                 It is also possible to use the Object constructor function:
                 <br>
                 constructedObject = new Object();
-                << {}
+                << {} 
                 <br><br>
                 A literal is still considered to be an instance of the Object constructor:
                 <br>
                 literalObject instanceof Object;
-                << true
+                << true 
                 <br><br>
                 Similarly, the easiest way to create an array is to use the literal syntax, like so:
                 <br>
                 const literalArray = [1,2,3];
-                << [1, 2, 3]
+                << [1, 2, 3] 
                 <br><br>
                 But an alternative is to use the Array constructor function:
                 <br>
                 constructedArray = new Array(1,2,3);
-                << [1, 2, 3]</li>
-        </ul>
-
+                << [1, 2, 3]</li> 
+        </ul> 
+                        
         <p>Using classes in JavaScript</p>
         <ul>
             <li>classes are preferred to constructor functions. They will throw errors.</li>
@@ -140,15 +142,21 @@
 
         <p>Prototypes</p>
         <ul>
-            <li>Every class has a prototype property that is shared by every instance of the class. So any properties or methods of a class’s prototype can be accessed by every object instantiated by that class.</li>
-            <li>You can use the prototype property of a class to add extra mehtods and properties after the class has been created.</li>
-            <li>should be used to define any properties that will remain the same for every instance of the class.</li>
+            <li>Every class has a prototype property that is shared by every instance of the
+                class. So any properties or methods of a class’s prototype can be accessed
+                by every object instantiated by that class.</li>
+            <li>You can use the prototype property of a class to add extra mehtods and
+                properties after the class has been created.</li>
+            <li>should be used to define any properties that will remain the same for every
+                instance of the class.</li>
         </ul>
 
         <p>Public and Private methods</p>
         <ul>
-            <li>Methods and properties are said to be public because they can be queried directly and changed by assignment.</li>
-            <li>use the concept of variable scope to keep some properties and methods private inside of a class declaration.</li>
+            <li>Methods and properties are said to be public because they can be queried
+                directly and changed by assignment.</li>
+            <li>use the concept of variable scope to keep some properties and methods
+                private inside of a class declaration.</li>
         </ul>
 
         <p>Adding methods to built-in objects</p>
@@ -159,14 +167,17 @@
 
         <p>Mixins</p>
         <ul>
-            <li>A mixin is a way of adding properties and methods of some objects to another object without using inheritance. It allows more complex objects to be created by ‘mixing’ basic objects together.</li>
+            <li>A mixin is a way of adding properties and methods of some objects to another
+                object without using inheritance. It allows more complex objects to be
+                created by ‘mixing’ basic objects together.</li>
             <li>Basic mixin functionality is provided by the Object.assign() method.</li>
         </ul>
 
         <h3>Chapter 15: Modern JavaScript</h3>
         <p>Modular JavaScript</p>
         <ul>
-            <li>A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules. </li>
+            <li>A module is a self-contained piece of code that provides functions and
+                methods that can then be used in other files and by other modules. </li>
         </ul>
 
         <h3 class="example">Examples</h3>
@@ -177,23 +188,24 @@
             <button type='submit'>Search</button>
         </form>
         <br>
+        
         <p><em>HERO FORM</em></p>
         <form id='hero'>
             <label for='heroName'>Name:
-                <input type='text' id='heroName' name='heroName' autofocus placeholder='Your Super Hero Name'
-                    maxlength=32 required>
+                <input type='text' id='heroName' name='heroName' autofocus
+                        placeholder='Your Super Hero Name' maxlength=32 required>
             </label>
 
             <br>
 
-            <!--using password type attribute (conceals input)-->
+        <!--using password type attribute (conceals input)-->
             <label for='realName'>Real Name:
                 <input type='password' name='realName' id='realName'>
             </label>
 
             <br>
 
-            <!--using checkbox type attribute-->
+        <!--using checkbox type attribute-->
             <p>Super Powers:</p>
             <label for='flight'>Flight:
                 <input type='checkbox' id='flight' value='Flight' name='powers'>
