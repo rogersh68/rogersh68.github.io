@@ -163,6 +163,10 @@ main {
     margin-top: 15px;
 }
 
+.article section {
+    text-align: left;
+}
+
 #message {
     background-color: #2274A5;
     color: #ffffff;
