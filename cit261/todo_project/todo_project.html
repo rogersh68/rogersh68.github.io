@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To Do List</title>
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
-        <h3>To Do List</h3>
+        <picture><img src="images/check.png" alt="check mark"></picture>
+        <div><h1>My ToDo List</h1></div>
     </header>
     <main>
-        <section>
-            <ul>
-                <li></li>
-            </ul>
+        <section id="item_list">
+            <table>
+                <tbody>
+                </tbody>
+            </table>
         </section>
-        <section>
+        <section id="buttons">
             <p><span id="tasks_left"> </span> tasks left</p>
-            <button id="all">All</button>
-            <button id="active">Active</button>
-            <button id="completed">Completed</button>
+            <button type="button" id="all" onclick="loadTasks()">All</button>
+            <button type="button" id="active" onclick="filterActive()">Active</button>
+            <button type="button" id="completed" onclick="filterCompleted()">Completed</button>
         </section>
     </main>
-    <footer>
-        <input type="text" id="new_item">
-        <button id="add_item">+</button>
-    </footer>
+    <form action="">
+        <label for="new_task">New Task: </label>
+        <input type="text" id="new_task" name="new_task">
+        <button type="button" id="add_item" onclick="addItem()">+</button>
+    </form>
 
+    <script src="scripts/utilities.js" type="module"></script>
     
 </body>
 </html>
