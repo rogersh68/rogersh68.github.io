@@ -1,8 +1,9 @@
 body {
     font-size: 16px;
-    font-family: sans-serif; /*update*/
-    
-    background-color: pink;
+    font-family: 'Lemonada', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+    background-color: lightyellow;
+    background-size: 450px auto;
 }
 
 header {
@@ -10,13 +11,12 @@ header {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-top: 50px;
     background-color: rgba(0, 0. 0, 0.5);
 }
 
 h1 {
-    font-size: 2rem;
-    font-family: serif; /*update*/
+    font-size: 2.5rem;
+    font-family: 'Galada', cursive;
 }
 
 img {
@@ -30,13 +30,37 @@ main {
 #item_list {
     border: 1px dashed black;
 }
-#buttons {
-    border: 1px solid black;
+
+tr {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 10px;
 }
-button {
-    padding: 10px;
+
+td {
+    margin: 10px;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1AE30;
+}
+
+#buttons button {
+    width: 85px;
+    height: 45px;
     background-color: white;
     border: 2px solid black;
+    margin: 5px;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 15px;
 }
 
 form {
