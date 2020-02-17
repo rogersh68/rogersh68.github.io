@@ -31,14 +31,26 @@ main {
     border: 1px dashed black;
 }
 
-tr {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin: 10px;
+table {
+    border-right: 1px dashed black;
 }
 
-td {
-    margin: 10px;
+table td {
+    border-left: 1px dashed black;
+    border-top: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+}
+
+a:visited {
+    color: black;
 }
 
 #buttons {

@@ -1,5 +1,5 @@
 div {
-    margin: 50px;
+    margin: 70px;
 }
 
 #borders {
@@ -12,7 +12,7 @@ div {
     font-family: sans-serif;
 
     /* Let's style some borders! */
-
+    border: 20px double yellow;
 }
 
 #corners {
@@ -25,7 +25,7 @@ div {
     font-family: sans-serif;
 
     /* Let's style some corners! */
-    
+    border-radius: 30% 5% 15% 5% / 50%;
 }
 
 #shadows {
@@ -38,5 +38,5 @@ div {
     font-family: sans-serif;
 
     /* Let's style some shadows! */
-    
+    box-shadow: -15px -15px 15px 10px red;
 }
