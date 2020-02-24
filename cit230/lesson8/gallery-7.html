@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black Cloud Weather | Preston Idaho</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7cSource+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/lazyload.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body onload="currentDate()">
+    <div id="message" class="showme">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    
+    <header>
+        <picture>
+            <img id="logo" src="images/blackcloud.png" alt="Black Cloud Logo">
+        </picture>
+        <section class="heading">
+            <h1>Black Cloud Weather</h1>
+            <div class="motto">Tut, tut! Looks like rain...</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        
+        <div class="gallery">
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery1.jpg" alt="snowing in a city">
+                <figcaption>Light snowfall in the city</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery2.jpg" alt="sunset clouds">
+                <figcaption>Rain storm moving in at sunset</figcaption>
+            </picture>
+            
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery3.jpg" alt="snow in the mountains">
+                <figcaption>Snow storm in the mountains</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery4.jpg" alt="foggy farm in the morning">
+                <figcaption>Light fog in the morning</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery5.jpg" alt="frosty field">
+                <figcaption>A very cold and frosty morning</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery6.jpg" alt="sunny field">
+                <figcaption>A bright and sunshiney day</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery7.jpg" alt="lightning storm">
+                <figcaption>Late night ligtning storm</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery8.png" alt="windy tree">
+                <figcaption>A very windy and stormy day</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/gallery-placeholder.jpg" data-src="images/gallery9.jpg" alt="rain">
+                <figcaption>A rainy spring afternoon</figcaption>
+            </picture>
+
+        </div>
+
+        <div class="contact">
+            <img class="map" src="images/preston_map.png" alt="map">
+            <div id="contact-div">
+            <section class="information">
+                <p><strong>Black Cloud Weather</strong></p>
+                <p><img class="pin" src="images/pin.png" alt="pin"> 123 North Street</p>
+                <p>Preston, ID 83263</p>
+            </section>
+            <section class="information">
+                <p>&#9743; 999.999.9999</p>
+                <p>&#9993; bcweather@bcw.com</p>
+            </section>
+            <section class="information">
+                <a href="facebook.com"><img class="social" src="images/facebook.png" alt="social media icon"></a>
+                <a href="snapchat.com"><img class="social" src="images/snapchat.png" alt="social media icon"></a>
+                <a href="pinterest.com"><img class="social" src="images/pintrest.png" alt="social media icon"></a>
+                <a href="whatsapp.com"><img class="social" src="images/whatsapp.png" alt="social media icon"></a>
+
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Black Cloud Weather | Hannah Rogers | Terms of Use | <span id="output"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ['Montserrat', 'Source Sans Pro']}});</script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/currentDate.js"></script>
+    <script src="js/bannerMessage.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
