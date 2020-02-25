@@ -161,7 +161,7 @@ form legend {
 .top {
     display:block;
     padding: .5rem;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 .sbs {
     display:block;
@@ -169,7 +169,7 @@ form legend {
     font-size: 1rem;
 }
 
-.top input, .top select, .top textarea, input[type="range"] {
+.top input, .top select, .top textarea {
     display: block;
     font-size: 16px;
     padding: 10px;

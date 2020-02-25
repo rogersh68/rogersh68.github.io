@@ -39,4 +39,8 @@
         max-width: 825px;
         margin: auto;
     }
+
+    .top input, .top select, .top textarea {
+        padding: 5px;
+    }
 }
