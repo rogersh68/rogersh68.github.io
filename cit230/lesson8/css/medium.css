@@ -22,51 +22,9 @@
         display: none;
     }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-        
-    }
-
-    .hero-image {
-        height: 300px;
-    }
-
     main {
         max-width: 775px;
         margin: auto;
-    }
-
-    .article img {
-        float: right;
-        margin: 15px;
-        margin-top: 65px;
-    }
-
-    .forecast {
-        display: block;
-        text-align: center;
-    }
-
-    .weather-icon {
-        width: 60px;
-        height: auto;
-    }
-    
-    table {
-        width: 80%;
-        border-collapse: collapse;
-        border: 2px solid #000000;
-        margin: 0 auto;
-    }
-    
-    th {
-        padding: 16px;
-        background-color: #8AA1B1;
-    }
-    
-    td {
-        padding-top: 10px;
-        padding-bottom: 15px;
     }
     
     .map {

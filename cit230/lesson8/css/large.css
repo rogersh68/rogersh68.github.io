@@ -1,15 +1,5 @@
 @media only screen and (min-width: 64rem) {
 
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    figcaption {
-        display: block;
-        padding: 10px;
-        text-align: center;
-    }
-
     main {
         max-width: 800px;
     }

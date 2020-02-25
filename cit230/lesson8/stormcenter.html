@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Black Cloud Weather | Preston Idaho</title>
+    <title>Black Cloud Weather | Storm Center</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat%7cSource+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/lazyload.css">
@@ -35,61 +35,53 @@
             <li><a href="../lesson6/preston-6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li class="active"><a href="#">Gallery</a></li>
+            <li class="active"><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Weather Gallery</h2>
+        <h2>Storm Center</h2>
         
-        <div class="gallery">
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery1.jpg" alt="snowing in a city">
-                <figcaption>Light snowfall in the city</figcaption>
-            </picture>
-
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery2.jpg" alt="sunset clouds">
-                <figcaption>Rain storm moving in at sunset</figcaption>
-            </picture>
-            
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery3.jpg" alt="snow in the mountains">
-                <figcaption>Snow storm in the mountains</figcaption>
-            </picture>
-
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery4.jpg" alt="foggy farm in the morning">
-                <figcaption>Light fog in the morning</figcaption>
-            </picture>
-
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery5.jpg" alt="frosty field">
-                <figcaption>A very cold and frosty morning</figcaption>
-            </picture>
-
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery6.jpg" alt="sunny field">
-                <figcaption>A bright and sunshiney day</figcaption>
-            </picture>
-
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery7.jpg" alt="lightning storm">
-                <figcaption>Late night ligtning storm</figcaption>
-            </picture>
-
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery8.png" alt="windy tree">
-                <figcaption>A very windy and stormy day</figcaption>
-            </picture>
-
-            <picture>
-                <img src="images/gallery-placeholder.jpg" data-src="images/gallery9.jpg" alt="rain">
-                <figcaption>A rainy spring afternoon</figcaption>
-            </picture>
-
-        </div>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="email@provider.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" required></label>
+                <label class="top">Zip Code*<input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Data</legend>
+                <label class="top">Storm Date<input type="date" name="date"></label>
+                <label class="top">Storm Type<input name="type" list="stormlist">
+                    <datalist id="stormlist">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist></label>
+                <label class="top">Storm Severity<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option disabled selected>Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+                    </select> </label>
+                <label id="danger" class="top">Are you in Danger:</label>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Other</legend>
+                <label class="top">Comments<textarea name="comments"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Report Storm" class="submitBtn">
+        </form>
 
         <div class="contact">
             <img class="map" src="images/preston_map.png" alt="map">
@@ -124,6 +116,7 @@
     <script src="js/currentDate.js"></script>
     <script src="js/bannerMessage.js"></script>
     <script src="js/lazyload.js"></script>
+    <script src="js/adjustRating.js"></script>
 </body>
 
 </html>

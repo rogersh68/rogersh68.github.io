@@ -8,15 +8,6 @@ body p {
     margin: 6px;
 }
 
-.sum-left-col {
-    text-align: right;
-    padding-bottom: 10px;
-}
-
-.sum-right-col {
-    font-style: italic;
-}
-
 header {
     background-color: #8AA1B1;
     padding: 5px 0;
@@ -100,30 +91,6 @@ ul {
     display: block;
 }
 
-.gallery {
-    display: grid;
-    grid-gap: 20px;
-    justify-content: center;
-    justify-items: center;
-    margin-bottom: 20px;
-
-}
-
-.gallery picture {
-    border: 1px solid black;
-}
-
-.gallery img {
-    margin-bottom: -3px;
-}
-
-.gallery picture:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-figcaption {
-    display: none;
-}
 
 main {
     display: grid;
@@ -131,65 +98,8 @@ main {
     margin: 0 auto;
 }
 
-.forecast {
-    display: none;
-}
-
 .map {
     display: none;
-}
-
-
-.hero {
-    position: relative;
-}
-
-.hero-image {
-    margin: 10px auto;
-    border: 2px solid #2274A5;
-    width: 100%;
-    height: 200px;
-}
-
-.summary {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    background-color: rgba(34, 116, 165, 0.7);
-    padding: 10px 15px 10px 15px;
-    box-shadow: 0 0 30px #464655;
-}
-
-.summary h3 {
-    border-bottom: 2px solid;
-    margin-bottom: 0px;
-}
-
-.summary-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0px;
-}
-
-.article {
-    display: block;
-    margin: 30px auto;
-    background-color: #1F2041;
-    padding: 15px;
-    color: #ffffff;
-    font-style: italic;
-    text-align: center;
-}
-
-.article img {
-    box-shadow: 0 0 30px #464655;
-    width: 400px;
-    height: auto;
-    margin-top: 15px;
-}
-
-.article section {
-    text-align: left;
 }
 
 #message {
@@ -233,4 +143,59 @@ footer {
 .social {
     width: 25px;
     padding: 5px;
+}
+
+form fieldset {
+    margin: 1.5rem 0;
+    border: 1px solid #2274A5;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #2274A5;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+.top {
+    display:block;
+    padding: .5rem;
+    font-size: .8rem;
+}
+.sbs {
+    display:block;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.top input, .top select, .top textarea, input[type="range"] {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitBtn {
+    background-color: #2274A5;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 2rem 2%;
+    width: 95%;
+    max-width: 20rem;
+}
+
+form input:required {
+    border-left: 4px solid red;
+}
+
+#danger {
+    margin-bottom: -10px;
+}
+
+.thanks {
+    margin: 3rem;
+    padding-bottom: 20px;
 }
