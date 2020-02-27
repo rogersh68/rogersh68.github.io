@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannah Rogers' Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <style>
+        /* Chapter 5 examples */
+        #ch5:hover {
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            transition-delay: 80ms;
+            transform: translateX(45px) scaleY(2) rotate(-10deg) skewX(20deg);
+        }
+
+        #animation:hover {
+            animation-name: appearDisappear;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-delay: 300ms;
+        }
+
+        @keyframes appearDisappear { 
+            0%, 100% {
+            opacity: 0;
+            }
+            20%, 80% {
+            opacity: 1;
+            }
+        }
+
+        #translation:hover {
+            transform: translate(60px, -5px);
+        }
+
+        #scaling:hover {
+            transform: scale(0.75, 1.5);
+        }
+        
+        #rotation:hover {
+            transform: rotate(10deg);
+        }
+
+        #skew:hover {
+            transform: skew(15deg, 5deg)
+        }
+
+        #origin:hover {
+            transform-origin: 10% 10%;
+            transform: rotate(180deg);
+        }
+
+        .myCanvas {
+            border: 2px solid gray;
+        }
+
+        #drop {
+            margin: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hannah Rogers</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week1.html">Week 1</a></li>
+            <li><a href="week2.html">Week 2</a></li>
+            <li><a href="week3.html">Week 3</a></li>
+            <li><a href="week4.html">Week 4</a></li>
+            <li><a href="week5.html">Week 5</a></li>
+            <li><a href="week6.html">Week 6</a></li>
+            <li><a href="week7.html">Week 7</a></li>
+            <li class="active"><a href="week8.html">Week 8</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Week 8</h2>
+            <h3>Reading Notes</h3>
+        </section>
+
+        <h3>Chapter 8: CSS3 Transforms and Transitions</h3>
+        <p>Transforms</p>
+        <ul>
+            <li>The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page. We can manipulate an element’s appearance usingtransform functions.
+                <p>Translation</p>
+                <ul>
+                    <li>Translation functions allow you to move elements left, right, up, or down. </li>
+                    <li>When you employ a translation function, you’re moving elements without impacting the flow of the document.</li>
+                    <li>When you employ a translation function, you’re moving elements without impacting the flow of the document.</li>
+                    <li id="translation">I'm Translated when you hover!</li>
+                    <li>You can also use translateX(x) or translateY(y)</li>
+                </ul>
+
+                <p>Scaling</p>
+                <ul>
+                    <li>The scale(x,y) function scales an element by the defined factors horizontally then vertically. If only one value is provided, it will be used for both the x and y values, growing or shrinking your element or pseudo-element while maintaining the original aspect ratio.</li>
+                    <li id="scaling">I'm scaled when you hover!</li>
+                    <li>You can also use scaleX(x) or scaleY(y)</li>
+                </ul>
+
+                <p>Rotation</p>
+                <ul>
+                    <li>The rotate() function rotates an element around the point of origin by a specified angle value. </li>
+                    <li>Generally, angles are declared in degrees, with positive degrees moving clockwise and negative moving counterclockwise. </li>
+                    <li id="rotation">I'm rotated when you hover!</li>
+                </ul>
+
+                <p>Skew</p>
+                <ul>
+                    <li>The skew(x,y) function specifies a skew along the x and y axes.</li>
+                    <li id="skew">I'm skewed when you hover!</li>
+                    <li>You can also use skewX(x) or skewY(y)</li>
+                </ul>
+
+                <p>Changing the Origin</p>
+                <ul>
+                    <li>You control the origin from which you transforms are applied with transform-origin.</li>
+                    <li>It is the same syntax as the background-position</li>
+                    <li>Default is center (50% 50%)</li>
+                    <li id="origin">I'm rotating on an origin of 10% 10% or top center</li>
+                </ul>
+            </li><br>
+            <li>Note that you shouldn’t declare a new transform : because of the cascade, a second transform would override the first. To declare multiple transformations, provide a space-separated list of transform functions.</li>
+        </ul>
+
+        <p>Transitions</p>
+        <ul>
+            <li>Transitions allow the values of CSS properties to change over time, essentially providing simple animations.</li>
+            <li>Steps to create a simple transition:
+                <ol>
+                    <li>Declare the original state of the element in the default style declaration.</li>
+                    <li>Declare the final state of your transitioned element; for example, a :hover state.</li>
+                    <li>Include the transition functions in your default style declaration using the transition properties, including: transition-property, transition-duration, transition-timing-function, and transition-delay.</li>
+                </ol>
+
+                <p>transition-property</p>
+                <ul>
+                    <li>The transition-property property defines the CSS properties of the element that should be transitioned, with all for all properties being the default.</li>
+                    <li>The list of properties that can be animated is found athttps://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties.</li>
+                </ul>
+
+                <p>transition-duration</p>
+                <ul>
+                    <li>The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state. You can specify this either in seconds ( s ) or milliseconds ( ms ).</li>
+                </ul>
+
+                <p>transition-timing-function</p>
+                <ul>
+                    <li>The transition-timing-function lets you control the pace of the transition in even more granular detail.</li>
+                    <li>The most common timing functions include the key terms ease , linear , ease-in , ease-out , or ease-in-out 
+                        <ul>
+                            <li>The default ease has a slow start, then it speeds up, and ends slowly.</li>
+                            <li>ease-in-out is similar to ease , but accelerates more sharply at the beginning. </li>
+                            <li>linear creates a transition that animates at a constant speed. </li>
+                            <li>ease-in creates a transition that is slow to start but gains speed, then stops abruptly</li>
+                            <li>ease-out , starts at full speed, then slows progressively as it reaches the conclusion of the transition.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>transition-delay</p>
+                <ul>
+                    <li>by using the transition-delay property, it’s possible to introduce a delay before the transition begins.</li>
+                    <li>Normally the transtion begins immediatley (0). Use seconds (s) or millisectonds (ms)</li>
+                </ul>
+            </li><br>
+            <li>Transition shorthand - transition: property duration timing-function delay;</li>
+            <li>If you want your properties to transition at different rates, or if you just want a select few to have a transition effect, include them as a comma-separated list containing, at minimum, the transition-property and transition-duration for each. Simply include each value in a comma-separated list using the same order as the transition-property for all your longhand transition property declarations</li>
+            <li>You can also use the shorthand to specify multiple transitions at different durations, delays, and timing functions. In this case, specify all the transition values as a shorthand for each transition, and separate each property’s transition with a comma</li>
+        </ul>
+
+        <p>Animations</p>
+        <ul>
+            <li>CSS animations, unlike transitions, allow you to control each step of an animation via keyframes. Akeyframe is a snapshot that defines a starting or end point of any smooth transition.
+                <p>Keyframes</p>
+                <ul>
+                    <li>first create a named animation, then attach it to an element in that element’s property declaration block.</li>
+                    <li>use the @keyframes rule</li>
+                    <li>There are two keyterms― from and to ―which evaluate to 0% and 100% respectively. These values specify how far along the animation each keyframe is located.
+                        <ul>
+                            <li>For example: @keyframes myAnimation { from { property: propertykeyterm(50%);} to { property: propertykeyterm(70%);} }</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>Animation Properties</p>
+                <ul>
+                    <li>animation-name
+                        <ul>
+                            <li>This property is used to attach an animation (previously defined using the @keyframes syntax) to an element</li>
+                        </ul>
+                    </li>
+                    <li>animation-duration
+                        <ul>
+                            <li>The animation-duration property defines the length of time (in seconds or milliseconds) an animation takes to complete one iteration (all the way through, from 0% to 100%):</li>
+                        </ul>
+                    <li>animation-timing-function
+                        <ul>
+                            <li>Like the transition-timing-function property, the animation-timing-function determines how the animation will progress over its duration. The options are the same as for transition-timing-function : ease , linear , ease-in , ease-out , ease-in-out , a developer-defined cubic-bezier() function, step-start , step-end , or a developer-defined number of steps with the steps(number, direction) function</li>
+                        </ul>
+                    </li>
+                    <li>animation-iteration-count
+                        <ul>
+                            <li>The animation-iteration-count property lets you define how many times the animation will play through. The value is generally an integer, but you can also use numbers with decimal points (in which case, the animation will end partway through an iteration), or the value infinite for endlessly repeating animations.</li>
+                        </ul>
+                    </li>
+                    <li>animation-direction
+                        <ul>
+                            <li>The value of reverse will cause the animation to start at the 100% keyframe and work its way to the 0% keyframe for every iteration. </li>
+                        </ul>
+                    </li>
+                    <li>animation-delay
+                        <ul>
+                            <li>The animation-delay property is used to define how many milliseconds or seconds to wait before the browser begins the animation</li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li>Animation shorthand - animation: name duration timing-function delay iteration-count direction fill-mode play-state</li>
+        </ul>
+
+        <h3>Chapter 12: Canvas, SVG, and Drag and Drop</h3>
+        <p>Canvas</p>
+        <ul>
+            <li>With canvas, we can draw shapes and lines, arcs and text, gradients and patterns. In addition, canvas gives us the power to manipulate pixels in images and even video.</li>
+            <li>First use canvas element with a way to grab the element from the DOM. You have to add width and height attributes to the element (CSS will only determine the size of the bos displaying the image is)</li>
+            <li>All drawing on the canvas happens via the Canvas JavaScript API. </li>
+            <li>Create context with getContext("2d"). Context is the place where your drawing is rendered</li>
+            <li>You get the color with the strokeStyle or fillStyle properties. Both strokeStyle and fillStyle are set on a context object, and both take one of three values: a string representing a color, a CanvasGradient object, or a CanvasPattern object.</li>
+            <li>With more complex shapes, we need to take three steps: layout the path, stroke the path, and fill the path. </li>
+        </ul>
+
+        <p>SVG (Scalable Vector Graphics)</p>
+        <ul>
+            <li>The viewBox attribute defines the starting location, width, and height of the SVG image. The circle element defines a circle, with cx and cy the X and Y coordinates of the center of the circle. The radius is represented by r , while fill defines the fill style.</li>
+        </ul>
+
+        <p>Drag and Drop</p>
+        <ul>
+            <li>Steps to adding drag and drop to your page:
+                <ol>
+                    <li>Set the draggable attribute on any HTML elements you’d like to be draggable.</li>
+                    <li>Add an event listener for the dragstart event on any draggable HTML elements.</li>
+                    <li>Add an event listener for the dragover and drop events on any elements that you want to have accept dropped items.</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h3 class="example">Examples</h3>
+        <h3>Chapter 5</h3>
+        <h3 id="ch5">This uses Transform and Transition</h3>
+        <br>
+        <h3 id="animation">This uses Animation</h3>
+
+        <br>
+        <h3>Chapter 12</h3>
+
+        <p>Canvas</p>
+        <canvas id="myCanvas" class="myCanvas" width="200" height="200">No Canvas</canvas>
+
+        <p>SVG</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="myCanvas">
+            <circle cx="50" cy="50" r="25" fill="red"/>
+        </svg>
+        
+        <p>Drag and Drop</p>
+
+        <p draggable="true" id="dandd">I'm draggable!</p>
+        <p id="drop">Drop Here</p>
+        
+    </main>
+
+    <footer></footer>
+    
+    <script src="scripts/main.js"></script>
+    <script>
+        //Canvas
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        //rectangle
+        context.strokeStyle = "red";
+        context.fillStyle = "blue";
+        context.fillRect(10, 10, 100, 100);
+        context.strokeRect(10, 10, 100, 100);
+        //circle
+        context.beginPath();
+        context.arc(150, 50, 30, 0, Math.PI*2, true);
+        context.closePath();
+        context.strokeStyle = "red";
+        context.fillStyle = "blue";
+        context.lineWidth = 3;
+        context.fill();
+        context.stroke();
+
+        //Drag and Drop
+        var drag = document.getElementById('dandd');
+        drag.addEventListener('dragstart', function (event) {
+            event.dataTransfer.setData("text/plain", this.id); 
+        })
+        var drop = document.getElementById('drop');
+        drop.addEventListener('dragover', function(event) {
+            event.preventDefault();
+        })
+        drop.addEventListener('drop', function(event) {
+            drag.parentNode.removeChild(drag);
+        })
+    </script>
+</body>
+
+</html>
