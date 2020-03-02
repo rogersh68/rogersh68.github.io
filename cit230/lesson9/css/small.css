@@ -1,0 +1,201 @@
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', consolas, sans-serif;
+    background-color: #E8F1F2;
+}
+
+body p {
+    margin: 6px;
+}
+
+header {
+    background-color: #8AA1B1;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    color: #000000;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.motto {
+    color: #464655;
+    font-style: italic;
+}
+
+h2 {
+    color: #1F2041;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: #1F2041;
+}
+
+ul {
+    margin-top: 0;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li a {
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+.navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.responsive li {
+    display: block;
+}
+
+
+main {
+    display: grid;
+    display: block;
+    margin: 0 auto;
+}
+
+.map {
+    display: none;
+}
+
+#message {
+    background-color: #2274A5;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.showme {
+    display: block;
+}
+
+.hideme {
+    display: none;
+}
+
+footer {
+    padding: 10px;
+    background-color: #1F2041;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact {
+    background-color: #8AA1B1;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.pin {
+    width: 12px;
+    height: auto;
+}
+
+.information {
+    margin: 20px;
+}
+
+.social {
+    width: 25px;
+    padding: 5px;
+}
+
+form fieldset {
+    margin: 1.5rem 0;
+    border: 1px solid #2274A5;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #2274A5;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+.top {
+    display:block;
+    padding: .5rem;
+    font-size: .9rem;
+}
+.sbs {
+    display:block;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.top input, .top select, .top textarea {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitBtn {
+    background-color: #2274A5;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 2rem 2%;
+    width: 95%;
+    max-width: 20rem;
+}
+
+form input:required {
+    border-left: 4px solid red;
+}
+
+#danger {
+    margin-bottom: -10px;
+}
+
+.thanks {
+    margin: 3rem;
+    padding-bottom: 20px;
+}

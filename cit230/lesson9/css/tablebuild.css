@@ -1,0 +1,43 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 10px 10px 10px gray;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid lightgray;
+}
+
+tbody th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot {
+    font-size: small;
+}
+
+thead {
+    font-size: 1.5rem;
+}
+
+#highlighted {
+    background-color: #628ca6;
+    color: white;
+}
+
+thead, tfoot {
+    background-color: #7fb9c2;
+}
+
+tbody tr {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+

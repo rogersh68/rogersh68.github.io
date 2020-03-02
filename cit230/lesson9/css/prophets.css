@@ -1,0 +1,57 @@
+/*** Small Screen/ Main ***/
+h1, h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: cornflowerblue;
+    background-color: white;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+img {
+    width: 180px;
+    height: auto;
+    box-shadow: 0 0 10px 5px gray;
+    margin: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+section {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: blanchedalmond;
+    height: 95%;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
+
+/*** Medium Screen ***/
+@media only screen and (min-width: 35rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*** Large Screen ***/
+@media only screen and (min-width: 64rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
