@@ -38,7 +38,7 @@ header h1 {
     font-style: italic;
 }
 
-h2 {
+.page-header {
     color: #1F2041;
     text-align: center;
 }
@@ -145,57 +145,54 @@ footer {
     padding: 5px;
 }
 
-form fieldset {
-    margin: 1.5rem 0;
-    border: 1px solid #2274A5;
-    border-radius: 10px;
-    padding: .5rem 2%;
-}
-
-form legend {
-    color: #2274A5;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-}
-
-.top {
-    display:block;
-    padding: .5rem;
-    font-size: .9rem;
-}
-.sbs {
-    display:block;
-    padding: .5rem;
-    font-size: 1rem;
-}
-
-.top input, .top select, .top textarea {
+.article {
     display: block;
-    font-size: 16px;
-    padding: 10px;
-    width: 100%;
-    max-width: 20rem;
+    margin: 30px auto;
+    background-color: #8AA1B1;
+    padding: 15px;
+    font-style: italic;
+    text-align: center;
 }
 
-form input.submitBtn {
-    background-color: #2274A5;
+.article img {
+    box-shadow: 0 0 30px #464655;
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.article section {
+    text-align: left;
+    padding: 10px;
+}
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.towns section {
+    background-color: #1F2041;
     color: white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 0 2rem 2%;
-    width: 95%;
-    max-width: 20rem;
+    height: 100%;
 }
 
-form input:required {
-    border-left: 4px solid red;
+.town-motto {
+    color: #2274A5;
+    font-style: italic;
+    text-align: center;
 }
 
-#danger {
-    margin-bottom: -10px;
+.towns h2 {
+    font-style: oblique;
+    text-decoration: underline;
 }
 
-.thanks {
-    margin: 3rem;
-    padding-bottom: 20px;
+.towns img {
+    width: 100%;
 }

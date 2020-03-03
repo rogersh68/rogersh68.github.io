@@ -40,7 +40,28 @@
         margin: auto;
     }
 
-    .top input, .top select, .top textarea {
-        padding: 5px;
+    .article img {
+        float: right;
+        margin: 15px;
+        margin-top: 65px;
+        width: 400px;
+        height: auto;
+    }
+
+    .towns img {
+        float: left;
+        position: relative;
+        margin: 30px;
+        margin-top: -190px;
+        width: 400px;
+    }
+
+    .town-motto {
+        margin-bottom: 100px;
+    }
+
+    .town-info {
+        margin-left: 480px;
+        text-align: left;
     }
 }
