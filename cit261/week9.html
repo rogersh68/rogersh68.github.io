@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannah Rogers' Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hannah Rogers</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week1.html">Week 1</a></li>
+            <li><a href="week2.html">Week 2</a></li>
+            <li><a href="week3.html">Week 3</a></li>
+            <li><a href="week4.html">Week 4</a></li>
+            <li><a href="week5.html">Week 5</a></li>
+            <li><a href="week6.html">Week 6</a></li>
+            <li><a href="week7.html">Week 7</a></li>
+            <li><a href="week8.html">Week 8</a></li>
+            <li class="active"><a href="week9.html">Week 9</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Week 9</h2>
+            <h3>Reading Notes</h3>
+        </section>
+
+        <h3>Chapter 9: The Window Object</h3>
+        <p>The Browser Object Model</p>
+        <ul>
+            <li>The Browser Object Model (or BOM for short) is a collection of properties and methods that contain information about the browser and computer screen. </li>
+            <li>In a browser environment, the global object is the window object. This means that any global variable created is actually a property of the window object</li>
+        </ul>
+
+        <p>Finding out browser information</p>
+        <ul>
+            <li>The Navigator object contains information about the browser being used. Its userAgent property will return information about the browser and operating system being used.
+                <ul>
+                    <li>window.navigator.userAgent</li>
+                </ul>
+            </li>
+            <li>The window.location property is an object that contains information about the URL of the current page. It contains a number of properties that provide information about different fragments of the URL.
+                <ul>
+                    <li>window.location.href - returns the full URL as a string</li>
+                    <li>window.location.protocol - returns a string describing the protocol used</li>
+                    <li>window.location.host - returns a string describing the domain and port number</li>
+                    <li>window.location.origin - returns the protocol and domain where the current page originated from</li>
+                    <li>Also: assign(), reload(), replace()</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>Browser History</p>
+        <ul>
+            <li>The window.history property can be used to access information about any previously visited pages in the current browser session. </li>
+            <li>The window.history.length property shows how many pages have been visited before arriving at the current page.</li>
+            <li>The window.history.go() method can be used to go to a specific page, where 0 is the current page</li>
+            <li>There are also the window.history.forward() and window.history.back() methods that can be used to navigate forwards and backwards by one page respectively, just like using the browser’s forward and back buttons.</li>
+        </ul>
+
+        <p>Controlling windows</p>
+        <ul>
+            <li>A new window can be opened using the window.open() method. This takes the URL of the page to be opened as its first parameter, the window title as its second parameter, and a list of attributes as the third parameter. </li>
+            <li>The window.screen object contains information about the screen the browser is displayed on. You can find out the height and width of the screen in pixels using the height and width properties</li>
+        </ul>
+
+        <p>Cookies</p>
+        <ul>
+            <li>Cookies are small files that are saved locally on a user’s computer. </li>
+            <li>A restriction of cookies is that they can only be read by a web page from the same domain that set them.</li>
+            <li>Cookies take the form of a text file that contain a list of name/value pairs separated by semicolons.</li>
+            <li>To create a cookie, you assign it to JavaScript’s “cookie jar”, using the document.cookie property</li>
+            <li>Adding the string ; secure to the end of a cookie will ensure it’s only transmitted over a secure HTTPS network</li>
+        </ul>
+
+        <p>Timing functions</p>
+        <ul>
+            <li>The window.setTimeout() method accepts a callback to a function as its first parameter and a number of milliseconds as its second parameter.</li>
+            <li>The window.setInterval() method works in a similar way to window.setTimeout() , except that it will repeatedly invoke the callback function after every given number of milliseconds.</li>
+        </ul>
+
+        <h3>Chapter 14: HTML5 APIs</h3>
+        <p>The data- attribute</p>
+        <ul>
+            <li>The data- attribute is a way of embedding data in a web page using custom attributes that are ignored by the browser.</li>
+            <li>Data attributes provide a convenient way of adding data directly into the HTML markup</li>
+        </ul>
+
+        <p>Local Storage</p>
+        <ul>
+            <li>localStorage - The information is saved in the form of key-value pairs, and the values can only be strings.</li>
+            <li>sessionStorage - works the same way but the data is only saved for the current session.</li>
+        </ul>
+
+        <p>Geolocation</p>
+        <ul>
+            <li>If geolocation is available, it will be a property of the navigator object</li>
+            <li>Example:</li>
+            <p>navigator.geolocation.getCurrentPosition(youAreHere);</p>
+            <p>function youAreHere(position) {<br>
+                console.log(`Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`); <br>
+            }</p>
+            <li>The position object has several other properties that can be used to find out information about the location and movement of the device:
+                <ul>
+                    <li>position.speed property returns the ground speed of the device in meters per second.</li>
+                    <li>position.altitude property returns an estimate of the device’s altitude in meters above theWGS84ellipsoid, which is a standard measurement for the center of the Earth.</li>
+                    <li>position.heading property returns the direction the device is moving in. This is measured as a bearing in degrees, clockwise from North.</li>
+                    <li>position.timestamp property returns the time that the position information was recorded.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>Web Workers</p>
+        <ul>
+            <li>Web workers allow processes to be run in the background, adding support for concurrency in JavaScript. The idea is that any processes that could take a long time are carried out in the background.</li>
+            <li>Example:</li>
+            <p>const worker = new Worker('task.js')';</p>
+            <li>This function takes the name of another JavaScript file as an argument. In the example, this is a file called 'task.js'. If this file exists, it will be downloaded asynchronously. The worker will only start once the file has finished downloading completely. If the file doesn’t exist, an error is thrown.</li>
+            <li>To post a message to the worker use: worker.postMessage('message');</li>
+            <li>To post a message from the worker: self.postMessage('message');</li>
+        </ul>
+
+        <p>Multimedia</p>
+        <ul>
+            <li>An audio clip can be inserted into a page with the audio tag, using the src attribute to point to the audio file:</li>
+            <audio src='/song.mp3' controls>
+                Your browser does not support the audio element.
+                </audio>
+            <li>A video clip can be inserted with the video tag, using the src attribute to point to the movie file:</li>
+                <video src='http://movie.mp4' controls>
+                    Your browser does not support the video element.
+                </video>
+        </ul>
+
+        <p>Shims and Polyfills</p>
+        <ul>
+            <li>These are libraries of code that allow you to use the APIs as usual. They then fill in the necessary code that's not provided natively by the user’s browser.</li>
+            <li>The terms shim and polyfill are often used interchangeably. The main difference between them is that a shim is a piece of code that adds some missing functionality to a browser, although the implementation method may differ slightly from the standard API. A polyfill is a shim that achieves the same functionality, while also using the API commands that would be used if the feature was supported natively.</li>
+        </ul>
+        
+    </main>
+
+    <footer></footer>
+    
+    <script src="scripts/main.js"></script>
+    <script>
+        //Timing function example
+        window.setTimeout( () => alert("This is a timeout function"), 3000);
+    </script>
+</body>
+
+</html>
