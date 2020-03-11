@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannah Rogers' Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hannah Rogers</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week1.html">Week 1</a></li>
+            <li><a href="week2.html">Week 2</a></li>
+            <li><a href="week3.html">Week 3</a></li>
+            <li><a href="week4.html">Week 4</a></li>
+            <li><a href="week5.html">Week 5</a></li>
+            <li><a href="week6.html">Week 6</a></li>
+            <li><a href="week7.html">Week 7</a></li>
+            <li><a href="week8.html">Week 8</a></li>
+            <li><a href="week9.html">Week 9</a></li>
+            <li class="active"><a href="week10.html">Week 10</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Week 10</h2>
+            <h3>Reading Notes</h3>
+        </section>
+
+        <h3>MDN: Validating Forms</h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">Link to Article</a>
+        <p>Validating with the API</p>
+        <ul>
+            <li>The Constraint Validation API consists of a set of properties and methods available to the following form element DOM interfaces:
+                <ul>
+                    <li>HTMLButtonElement</li>
+                    <li>HTMLFieldSetElement</li>
+                    <li>HTMLInputElement</li>
+                    <li>HTMLOutputElement</li>
+                    <li>HTMLSelectElement</li>
+                    <li>HTMLTextAreaElement</li>
+                </ul>
+            </li>
+            <li>List of properties available on those elements:
+                <ul>
+                    <li>validationMessage: returns a localized message</li>
+                    <li>validity: returns a ValidityState obgect containing properties describing the validity state:
+                        <ul>
+                            <li>patternMismatch</li>
+                            <li>tooLong</li>
+                            <li>tooShort</li>
+                            <li>rangeOverflow</li>
+                            <li>rangeUnderflow</li>
+                            <li>typeMismatch</li>
+                            <li>valid</li>
+                            <li>valueMissing</li>
+                        </ul>
+                    </li>
+                    <li>willValidate: returns true if the element will be validated when the form is submitted.</li>
+                </ul>
+            </li>
+            <li>List of methods available on those elements:
+                <ul>
+                    <li>checkValidity(): returns true if the element's value has no validity problems</li>
+                    <li>setCustomValidity(message): Adds a custom error message to the element.</li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <p>Other</p>
+        <ul>
+            <li>Using built-in form validation is done with attributes on form elements (required, minlength, maxlength, type, pattern, etc.)</li>
+            <li>Validating forms using JavaScript is customizable by writing your own code or using a library (Constraint Validation API).</li>
+        </ul>
+
+        <h3>MDN: Using Fetch</h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Link to Article</a>
+        <p>Supplying request options</p>
+        <ul>
+            <li>The fetch() method can optionally accept a second parameter, an init object that allows you to control a number of different settings:
+                <ul>
+                    <li>method: (GET, POST, PUT, DELETE, etc.)</li>
+                    <li>mode: (no-cors, cors, same-origin)</li>
+                    <li>cache: (default, no-cache, reload, force-cache, only-if-cached)</li>
+                    <li>credentials: (include, same-origin, omit)</li>
+                    <li>headers: {'Content-Type': ('application/json', 'application/x-www-form-urlencoded')}</li>
+                    <li>redirect: (manual, follow, error)</li>
+                    <li>referrerPolicy: (no-referrer, client)</li>
+                    <li>body: JSON.stringify(data)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>Other</p>
+        <ul>
+            <li>fetch differs from ajax in three main ways:
+                <ul>
+                    <li>The Promise returned from fetch won't reject on HTTP error status</li>
+                    <li>fetch won't receive cross-site cookies</li>
+                    <li>fetch won't send cookies</li>
+                </ul>
+            </li>
+            <li>Basic fetch request:</li>
+            <p>fetch('http://example.com.json')<br>
+                &nbsp;&nbsp;.then((respons) => {<br>
+                &nbsp;&nbsp;&nbsp; return response.json();<br>
+                })<br>
+                &nbsp;&nbsp;.then((data) => {<br>
+                    &nbsp;&nbsp;&nbsp; console.log(data);<br>
+                });</p>
+        </ul>
+
+    </main>
+
+    <footer></footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
