@@ -1,3 +1,4 @@
+// Upload the JSON data
 const requestURL = 'https://rogersh68.github.io/cit261/block2_project/scripts/data.json';
 
 fetch(requestURL)
@@ -20,3 +21,11 @@ fetch(requestURL)
         document.querySelector('div.display').appendChild(display);
     }
 })
+
+// Switch views
+const changeview = document.querySelector('.view');
+changeview.addEventListener("click", viewChanger, false);
+
+function viewChanger() {
+    document.querySelector(".display").classList.toggle("display_all");
+}
