@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black Cloud Weather | Preston Idaho</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7cSource+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/preston/small.css">
+    <link rel="stylesheet" href="css/preston/medium.css">
+    <link rel="stylesheet" href="css/preston/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body onload="currentDate(), windChill()">
+    <div id="message" class="showme">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    
+    <header>
+        <picture>
+            <img id="logo" src="images/blackcloud.png" alt="Black Cloud Logo">
+        </picture>
+        <section class="heading">
+            <h1>Black Cloud Weather</h1>
+            <div class="motto">Tut, tut! Looks like rain...</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="lesson7/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="images/preston_hero500.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                    <source srcset="images/preston_hero800.jpg" media="(min-width: 800px">
+                <img class="hero-image" src="images/preston_hero300.jpg" alt="Preston Idaho Image">
+            </picture>
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                    <div class="summary-info">
+                        <section class="sum-left-col">
+                            <p>Currently:</p>
+                            <p>Temperature:</p>
+                            <p>Wind Chill:</p>
+                            <p>Humidity:</p>
+                            <p>Wind Speed:</p>
+                        </section>
+                        <section class="sum-right-col">
+                            <p><span id="desc"></span></p>
+                            <p><span id="current-temp"></span>&#176;F</p>
+                            <p><span id="windchill"></span></p>
+                            <p><span id="humidity"></span>%</p>
+                            <p><span id="speed"></span> mph</p>
+                        </section>
+                    </div>
+            </section>
+        </div>
+
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th><span id="day0"></span></th>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img class="weather-icon" id="icon0" src="" alt=""></td>
+                    <td><img class="weather-icon" id="icon1" src="" alt=""></td>
+                    <td><img class="weather-icon" id="icon2" src="" alt=""></td>
+                    <td><img class="weather-icon" id="icon3" src="" alt=""></td>
+                    <td><img class="weather-icon" id="icon4" src="" alt=""></td>
+                </tr>
+                <tr class="last-row">
+                    <td><span id="temp0"></span>&#176;F</td>
+                    <td><span id="temp1"></span>&#176;F</td>
+                    <td><span id="temp2"></span>&#176;F</td>
+                    <td><span id="temp3"></span>&#176;F</td>
+                    <td><span id="temp4"></span>&#176;F</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="article">
+            <img src="images/preston_article.jpg" alt="Idaho Mountains">
+            <section>
+                <h3>Preston is a vacationer's dream. There's always something to do.</h3>
+                <p>Winter brings the best snow and the most beautiful winter scenery. Snowmobiling and cross country skiing is great. You can travel down Mink Creek, Cub River, and even Logan Canyon and see the most beautiful winter wonderland ever, ending up at Bloomington or Bear Lake.</p>
+                <p>Spring brings golfing at our 18-hole course, floating and kayaking down the beautiful Bear River, as well as fishing, boating, water-skiing or just camping at our 10 reservoirs. There are three swimming resorts close by and also a new swimming pool in town.</p>
+                <a href="https://www.prestonidaho.net/discover-the-natural-beauty-resorces-of-citys-outdoors/">View More (Source)</a>
+            </section>
+        </div>
+
+        <div class="contact">
+            <img class="map" src="images/preston_map.png" alt="map">
+            <div id="contact-div">
+            <section class="information">
+                <p><strong>Black Cloud Weather</strong></p>
+                <p><img class="pin" src="images/pin.png" alt="pin"> 123 North Street</p>
+                <p>Preston, ID 83263</p>
+            </section>
+            <section class="information">
+                <p>&#9743; 999.999.9999</p>
+                <p>&#9993; bcweather@bcw.com</p>
+            </section>
+            <section class="information">
+                <a href="facebook.com"><img class="social" src="images/facebook.png" alt="social media icon"></a>
+                <a href="snapchat.com"><img class="social" src="images/snapchat.png" alt="social media icon"></a>
+                <a href="pinterest.com"><img class="social" src="images/pintrest.png" alt="social media icon"></a>
+                <a href="whatsapp.com"><img class="social" src="images/whatsapp.png" alt="social media icon"></a>
+
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Black Cloud Weather | Hannah Rogers | <a class="atrib" href="https://openweathermap.org/">Open Weather Map</a> | <span id="output"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ['Montserrat', 'Source Sans Pro']}});</script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/currentDate.js"></script>
+    <script src="js/bannerMessage.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/prestonWeatherapi.js"></script>
+    <script src="js/prestonForecast.js"></script>
+</body>
+
+</html>

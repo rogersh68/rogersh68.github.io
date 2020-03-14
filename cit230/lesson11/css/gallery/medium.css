@@ -1,0 +1,84 @@
+@media only screen and (min-width: 35rem) {
+    header img {
+        width: 90px;
+        height: auto;
+    }
+
+    .motto {
+        font-size: larger;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    main {
+        max-width: 775px;
+        margin: auto;
+    }
+
+    .article img {
+        float: right;
+        margin: 15px;
+        margin-top: 65px;
+    }
+
+    .forecast {
+        display: block;
+        text-align: center;
+    }
+
+    .weather-icon {
+        width: 60px;
+        height: auto;
+    }
+    
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        border: 2px solid #000000;
+        margin: 0 auto;
+    }
+    
+    th {
+        padding: 16px;
+        background-color: #8AA1B1;
+    }
+    
+    td {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    .map {
+        display: block;
+        width: 350px;
+        height: auto;
+        margin: 5px 10px 5px 30px;
+        border: 1px solid black;
+    }
+
+    footer {
+        max-width: 825px;
+        margin: auto;
+    }
+}

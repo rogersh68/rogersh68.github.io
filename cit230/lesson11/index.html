@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black Cloud Weather | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7cSource+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/index/lazyload.css">
+    <link rel="stylesheet" href="css/index/small.css">
+    <link rel="stylesheet" href="css/index/medium.css">
+    <link rel="stylesheet" href="css/index/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body onload="currentDate()">
+    <div id="message" class="showme">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    
+    <header>
+        <picture>
+            <img id="logo" src="images/blackcloud.png" alt="Black Cloud Logo">
+        </picture>
+        <section class="heading">
+            <h1>Black Cloud Weather</h1>
+            <div class="motto">Tut, tut! Looks like rain...</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#">&#9776; Menu</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="page-header">Welcome</h2>
+        <div class="article">
+            <img src="images/idaho_mountains.png" alt="Idaho Mountains">
+            <section>
+                <h3>Current Weather Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. </p>
+                <p>Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+                <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </section>
+        </div>
+        <div class="towns"></div>
+
+        <div class="contact">
+            <img class="map" src="images/preston_map.png" alt="map">
+            <div id="contact-div">
+            <section class="information">
+                <p><strong>Black Cloud Weather</strong></p>
+                <p><img class="pin" src="images/pin.png" alt="pin"> 123 North Street</p>
+                <p>Preston, ID 83263</p>
+            </section>
+            <section class="information">
+                <p>&#9743; 999.999.9999</p>
+                <p>&#9993; bcweather@bcw.com</p>
+            </section>
+            <section class="information">
+                <a href="facebook.com"><img class="social" src="images/facebook.png" alt="social media icon"></a>
+                <a href="snapchat.com"><img class="social" src="images/snapchat.png" alt="social media icon"></a>
+                <a href="pinterest.com"><img class="social" src="images/pintrest.png" alt="social media icon"></a>
+                <a href="whatsapp.com"><img class="social" src="images/whatsapp.png" alt="social media icon"></a>
+
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Black Cloud Weather | Hannah Rogers | Terms of Use | <span id="output"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ['Montserrat', 'Source Sans Pro']}});</script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/currentDate.js"></script>
+    <script src="js/bannerMessage.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/towns.js"></script>
+</body>
+
+</html>

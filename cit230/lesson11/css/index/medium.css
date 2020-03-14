@@ -1,0 +1,67 @@
+@media only screen and (min-width: 35rem) {
+    header img {
+        width: 90px;
+        height: auto;
+    }
+
+    .motto {
+        font-size: larger;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    main {
+        max-width: 775px;
+        margin: auto;
+    }
+    
+    .map {
+        display: block;
+        width: 350px;
+        height: auto;
+        margin: 5px 10px 5px 30px;
+        border: 1px solid black;
+    }
+
+    footer {
+        max-width: 825px;
+        margin: auto;
+    }
+
+    .article img {
+        float: right;
+        margin: 15px;
+        margin-top: 65px;
+        width: 400px;
+        height: auto;
+    }
+
+    .towns img {
+        float: left;
+        position: relative;
+        margin: 30px;
+        margin-top: -190px;
+        width: 400px;
+    }
+
+    .town-motto {
+        margin-bottom: 100px;
+    }
+
+    .town-info {
+        margin-left: 480px;
+        text-align: left;
+    }
+}
