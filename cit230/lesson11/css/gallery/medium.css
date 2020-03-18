@@ -17,7 +17,6 @@
         flex: 1 1 100%;
     }
 
-
     .navigation li:first-child {
         display: none;
     }
@@ -25,6 +24,10 @@
     .gallery {
         grid-template-columns: 1fr 1fr;
         
+    }
+
+    .gallery img {
+        margin-bottom: -3px;
     }
 
     .hero-image {

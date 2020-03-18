@@ -4,10 +4,14 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    figcaption {
+    .gallery p {
         display: block;
         padding: 10px;
         text-align: center;
+    }
+
+    .gallery picture:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
 
     main {
