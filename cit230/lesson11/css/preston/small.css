@@ -217,3 +217,21 @@ footer {
 .atrib {
     color: white;
 }
+
+.events {
+    background-color: #2274A5;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.events h2 {
+    color: white;
+}
+
+.events p {
+    border: 1px solid black; 
+    padding: 15px 0 15px 0;
+    background-color: #E8F1F2;
+}

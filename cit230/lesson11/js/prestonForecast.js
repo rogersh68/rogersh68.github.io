@@ -3,9 +3,8 @@ const forecastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604
 fetch(forecastapiURL)
 .then((response) => response.json())
 .then((jsObject) => {
-    console.log(jsObject);
+    
     const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-    console.log(fivedayforecast);
 
     for (let i=0; i < fivedayforecast.length; i++) {
         // set temperature

@@ -71,4 +71,10 @@
         max-width: 825px;
         margin: auto;
     }
+
+    .events {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 }
