@@ -7,7 +7,8 @@
         "style": "Impressionist",
         "fact": "This work was created as part of a 250 piece Water Lilies series. The paintings were inspired by his flower garden at his home in Giverny, France.",
         "source": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)",
-        "imageurl": "https://www.claude-monet.com/images/paintings/water-lily-pond-with-japanese-bridge.jpg"
+        "imageurl": "https://www.claude-monet.com/images/paintings/water-lily-pond-with-japanese-bridge.jpg",
+        "artworkID": "1"
       },
       {
         "name": "Impression, Sunrise",
@@ -16,7 +17,8 @@
         "style": "Impressionist",
         "fact": "This work depicts the port of Le Havre, Monet's hometown. It is credited with inspiring the name of the Impressionist movement.",
         "source": "https://en.wikipedia.org/wiki/Impression,_Sunrise",
-        "imageurl": "https://www.claude-monet.com/images/paintings/impression-sunrise.jpg"
+        "imageurl": "https://www.claude-monet.com/images/paintings/impression-sunrise.jpg",
+        "artworkID": "2"
       },
       {
         "name": "Olive Trees With Yellow Sky And Sun",
@@ -25,7 +27,8 @@
         "style": "Impressionist/Expressionist",
         "fact": "This work is part of a 15 piece Olive Trees series. The paintings were created during van Gogh's stay at an asylum in southern France.",
         "source": "https://en.wikipedia.org/wiki/Olive_Trees_(Van_Gogh_series)",
-        "imageurl": "https://www.vincentvangogh.org/images/paintings/olive-trees-with-yellow-sky-and-sun.jpg"
+        "imageurl": "https://www.vincentvangogh.org/images/paintings/olive-trees-with-yellow-sky-and-sun.jpg",
+        "artworkID": "3"
       },
       {
         "name": "Sunflowers",
@@ -34,7 +37,8 @@
         "style": "Impressionist/Expressionist",
         "fact": "This work is part of a two Sunflower series with a total of 12 paintings. The paintings were inspired by van Gogh's friend Paul Gauguin.",
         "source": "https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)",
-        "imageurl": "https://www.vincentvangogh.org/images/paintings/sunflowers.jpg"
+        "imageurl": "https://www.vincentvangogh.org/images/paintings/sunflowers.jpg",
+        "artworkID": "4"
       },
       {
         "name": "Portrait of Adele Bloch-Bauer",
@@ -43,7 +47,8 @@
         "style": "Art Nouveau",
         "fact": "This work is also known as The Lady in Gold or The Woman in Gold. The painting was stolen by the Nazis in 1941 and returned to the Bloch-Bauer family in 2006.",
         "source": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I",
-        "imageurl": "https://www.gustav-klimt.com/images/paintings/Portrait-Of-Adele-Bloch-Bauer-1.jpg"
+        "imageurl": "https://www.gustav-klimt.com/images/paintings/Portrait-Of-Adele-Bloch-Bauer-1.jpg",
+        "artworkID": "5"
       },
       {
         "name": "Portrait of Fritza Riedler",
@@ -52,7 +57,8 @@
         "style": "Art Nouveau",
         "fact": "Klimt was commissioned to paint this portrait in 1904, during which time he was considered the most prominent portraitist in Vienna.",
         "source": "https://nl.wikipedia.org/wiki/Portret_van_Fritza_Riedler",
-        "imageurl": "https://www.gustav-klimt.com/images/paintings/Portrait-of-Fritza-Riedler.jpg"
+        "imageurl": "https://www.gustav-klimt.com/images/paintings/Portrait-of-Fritza-Riedler.jpg",
+        "artworkID": "6"
       },
       {
         "name": "The Weeping Woman",
@@ -61,7 +67,8 @@
         "style": "Cubism",
         "fact": "This work was part of a series Picasso made in protest to the Spanish Civil War. The model for the painting was Dora Maar, a professional photographer.",
         "source": "https://www.pablopicasso.org/the-weeping-woman.jsp",
-        "imageurl": "https://www.pablopicasso.org/images/paintings/the-weeping-woman.jpg"
+        "imageurl": "https://www.pablopicasso.org/images/paintings/the-weeping-woman.jpg",
+        "artworkID": "7"
       },
       {
         "name": "The Old Guitarist",
@@ -70,7 +77,8 @@
         "style": "Expressionist",
         "fact": "This work was inspired by Picasso's poverty and the suicide of his friend Carlos Casagemas. The melancholy elements in the painting reflect his feelings at the time.",
         "source": "https://en.wikipedia.org/wiki/The_Old_Guitarist",
-        "imageurl": "https://www.pablopicasso.org/images/paintings/the-old-guitarist.jpg"
+        "imageurl": "https://www.pablopicasso.org/images/paintings/the-old-guitarist.jpg",
+        "artworkID": "8"
       },
       {
         "name": "Ophelia",
@@ -79,7 +87,8 @@
         "style": "Romanticism",
         "fact": "This work is of Ophelia in Shakespeare's play, Hamlet. She was a favorite subject of Waterhouse.",
         "source": "https://www.myddoa.com/ophelia-1889-john-william-waterhouse/",
-        "imageurl": "https://uploads8.wikiart.org/images/john-william-waterhouse/ophelia-1889.jpg!HalfHD.jpg"
+        "imageurl": "https://uploads8.wikiart.org/images/john-william-waterhouse/ophelia-1889.jpg!HalfHD.jpg",
+        "artworkID": "9"
       },
       {
         "name": "The Lady Of Shallot",
@@ -88,7 +97,8 @@
         "style": "Romanticism",
         "fact": "This work is a representation of the ending of Alfred, Lord Tennyson's poem, The Lady of Shalott. It is one of Waterhouse's most famous works.",
         "source": "https://en.wikipedia.org/wiki/The_Lady_of_Shalott_(painting)",
-        "imageurl": "https://www.artble.com/imgs/1/1/4/77882/the_lady_of_shalott.jpg"
+        "imageurl": "https://www.artble.com/imgs/1/1/4/77882/the_lady_of_shalott.jpg",
+        "artworkID": "10"
       },
       {
         "name": "Mural",
@@ -97,7 +107,8 @@
         "style": "Abstract Expressionism",
         "fact": "This work is Pollocks largest, measuring 8ft by 19ft. It was commissioned by Peggy Guggenheim for the long entrance hall of her New York townhouse.",
         "source": "https://en.wikipedia.org/wiki/Mural_(1943)",
-        "imageurl": "https://www.jackson-pollock.org/images/paintings/mural.jpg"
+        "imageurl": "https://www.jackson-pollock.org/images/paintings/mural.jpg",
+        "artworkID": "11"
       },
       {
         "name": "Autumn Rhythm",
@@ -106,7 +117,8 @@
         "style": "Abstract Expressionism",
         "fact": "This is considered one of Pollock's most notable works. Its original name is Number 30.",
         "source": "https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)",
-        "imageurl": "https://www.jackson-pollock.org/images/paintings/autumn-rhythm.jpg"
+        "imageurl": "https://www.jackson-pollock.org/images/paintings/autumn-rhythm.jpg",
+        "artworkID": "12"
       }
     ]
   }
