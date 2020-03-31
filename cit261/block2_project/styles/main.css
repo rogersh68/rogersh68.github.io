@@ -51,13 +51,17 @@ nav {
 
 .options li {
     display: none;
-    padding: .5rem;
+    padding: .25rem;
     margin-left: -40px;
 }
 
 .viewOptions li {
     display: block;
-    background-color: aqua;
+    background-color: lightgray;
+}
+
+.viewOptions a {
+    padding: .5rem;
 }
 
 .viewOptions li:last-child {
@@ -71,9 +75,11 @@ nav {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 120px;
+    margin-top: 100px;
+    margin-bottom: 220px;
 }
+
+
 
 .display .art-image figcaption {
     display: none;
@@ -88,7 +94,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .display_all .art-desc {
@@ -119,6 +125,15 @@ img {
 }
 
 input {
-    background-color: #d5c5c8;
+    background-color: #eff1f3;
     padding: 1rem;
+}
+
+select {
+    height: 40px;
+    margin-top: 20px;
+}
+
+a.view {
+    padding: 1.75rem;
 }

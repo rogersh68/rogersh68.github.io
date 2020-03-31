@@ -137,6 +137,21 @@ table h2 {
     padding: 20px 0;
 }
 
+.guide-section {
+    background-color: #04151F;
+    padding: 20px;
+    margin: 20px;
+}
+
+.guide-desc {
+    background-color: lightgray;
+    margin: 40px;
+}
+
+.guide-image {
+    padding-top: 25px;
+}
+
 footer {
     background-color: #04151F;
     color: white;

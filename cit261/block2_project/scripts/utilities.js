@@ -36,6 +36,7 @@ function viewChanger() {
     }
 }
 
+
 // Get JSON data for select options
 fetch(requestURL)
 .then(function (response) {
@@ -120,9 +121,9 @@ function removeArt(artwork) {
 
 // Reset the selection field
 function updateSelect() {
-    // If artworkID is already on array disable option
-
     // Reset selection field to prompt
+    let select = document.querySelector(".newArtwork");
+    select.selectedIndex = 0;
 }
 
 
@@ -131,10 +132,8 @@ function clearArt() {
     let section = document.querySelector(".artwork");
 
     if (section != null) {
-        for (let i = 0; i < myArt.length; i++) {
-            section.remove();
-        }
-    }
+        section.remove();
+    } 
 }
 
 /***** Use local storage to store the user's todo list *****/
@@ -147,7 +146,10 @@ function saveArt(myArt) {
 // Get stored array
 function loadArt() {
     // Clear previous list from screen
-    clearArt();
+    for (let i = 0; i <= myArt.length; i++) {
+        clearArt();
+    }
+    
 
     // Loop through art array
     myArt.forEach(
