@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Art Gallery</title>
 
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- APIs -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caladea&display=swap">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <header>
         <h1>My Art Gallery</h1>
     </header>
+
     <main>
         <div class="display">
-            
+            <!-- Artwork Sections -->
         </div>
     </main>
+
     <nav>
         <ul class="options">
-            
             <li><a class="view" href="#">View All</a></li>
-            <li><label for="art">Add New</label>
-                <select name="art" class="newArtwork">
-                <option disabled selected>Select Artwork</option>
-            </select>
-            <button type="button" onclick="addArt()">Add</button></li>
-            <li><a class="menu" href="#">Gallery Options ></a></li>
+            <li><label for="art">Add New<br></label>
+                    <select name="art" class="newArtwork">
+                        <option disabled selected>Select Artwork</option>
+                    </select>
+                <input type="submit" onclick="addArt()" value="Add">
+            </li>
+            <li><a class="menu" href="#"><h2>[Gallery Options]</h2></a></li>
         </ul>
     </nav>
 
+    <!-- Scripts -->
     <script src="scripts/utilities.js" type="module"></script>
 </body>
 </html>

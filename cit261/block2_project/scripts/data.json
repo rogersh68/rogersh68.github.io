@@ -5,7 +5,7 @@
         "artist": "Claude Monet",
         "created": "1899",
         "style": "Impressionist",
-        "fact": "This work was created as part of a 250 piece Water Lilies series. The paintings were inspired by his flower garden at his home in Giverny, France.",
+        "fact": "This work was created as part of a 250 piece Water Lilies series. The paintings were inspired by Monet's flower garden at his home in Giverny, France.",
         "source": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)",
         "imageurl": "https://www.claude-monet.com/images/paintings/water-lily-pond-with-japanese-bridge.jpg",
         "artworkID": "1"
@@ -35,7 +35,7 @@
         "artist": "Vincent van Gogh",
         "created": "1888",
         "style": "Impressionist/Expressionist",
-        "fact": "This work is part of a two Sunflower series with a total of 12 paintings. The paintings were inspired by van Gogh's friend Paul Gauguin.",
+        "fact": "This work is part of two Sunflower series with a total of 12 paintings. The paintings were inspired by van Gogh's friend Paul Gauguin.",
         "source": "https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)",
         "imageurl": "https://www.vincentvangogh.org/images/paintings/sunflowers.jpg",
         "artworkID": "4"

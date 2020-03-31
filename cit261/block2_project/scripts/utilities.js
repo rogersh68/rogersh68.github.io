@@ -6,14 +6,6 @@ const requestURL = 'https://rogersh68.github.io/cit261/block2_project/scripts/da
 // Initialize user's art array
 let myArt = [];
 
-const artwork = new Artwork ("Impression, Sunrise", "Claude Monet", 1872, "Impressionist", "This work depicts the port of Le Havre, Monet's hometown.", "https://www.facebook.com", "https://www.claude-monet.com/images/paintings/impression-sunrise.jpg");
-
-myArt.push(artwork);
-
-console.log(myArt);
-
-loadArt();
-
 // See if there are items in storage and load if there are
 if (localStorage.getItem("myArt")) {
     myArt = JSON.parse(localStorage.getItem("myArt"));
@@ -44,7 +36,7 @@ function viewChanger() {
     }
 }
 
-// Get art options from JSON data for add new selector
+// Get JSON data for select options
 fetch(requestURL)
 .then(function (response) {
     return response.json();
@@ -53,10 +45,9 @@ fetch(requestURL)
     const artworks = jsonObject['artworks'];
     for (let i = 0; i < artworks.length; i++) {
         let option = document.createElement('option');
-        let value = artworks[i].artworkID;
-        option.setAttribute('value', value);
-        let text = artworks[i].name;
-        option.textContent = text;
+        
+        option.setAttribute('value', artworks[i].artworkID);
+        option.textContent = artworks[i].name;
 
         document.querySelector('select.newArtwork').appendChild(option);
     }
@@ -66,7 +57,7 @@ fetch(requestURL)
 window.addArt = addArt;
 function addArt() {
     // Find id of artwork user selected
-    let id = findID()
+    let id = document.querySelector(".newArtwork").value;
 
     // Fetch artwork's JSON data
     fetch(requestURL)
@@ -91,23 +82,18 @@ function addArt() {
 
                 // Push onto array
                 myArt.push(artwork);
+
+                // Save
+                saveArt(myArt);
+
+                // Load
+                loadArt();
             }
         }
     })
 
-    // Save
-    saveArt(myArt);
-
-    // Load
-    loadArt();
-
-    // reset add input 
-    clearField(); // May not need with selection
-}
-
-function findID() {
-    let id = document.querySelector(".newArtwork").value;
-    return id;
+    // Reset/Update art select 
+    updateSelect();
 }
 
 // Remove artwork
@@ -132,23 +118,22 @@ function removeArt(artwork) {
 
 /***** Keep the page clean *****/
 
-// Reset the selection field:
-function clearField() {
-    //document.getElementById('new_task').value = ''; // reset selection field?
+// Reset the selection field
+function updateSelect() {
+    // If artworkID is already on array disable option
+
+    // Reset selection field to prompt
 }
 
 
-// Reset artwork list
+// Clear display
 function clearArt() {
     let section = document.querySelector(".artwork");
 
-    if (myArt.length > 0) {
+    if (section != null) {
         for (let i = 0; i < myArt.length; i++) {
             section.remove();
         }
-    }
-    else {
-        return;
     }
 }
 
@@ -156,13 +141,13 @@ function clearArt() {
 
 // Send to storage
 function saveArt(myArt) {
-    localStorage.setItem('artworks', JSON.stringify(myArt));
+    localStorage.setItem('myArt', JSON.stringify(myArt));
 }
 
 // Get stored array
 function loadArt() {
     // Clear previous list from screen
-    //clearArt();
+    clearArt();
 
     // Loop through art array
     myArt.forEach(
@@ -179,11 +164,15 @@ function loadArt() {
             let aSource = document.createElement('a');
             let aRemove = document.createElement('a');
             let separator = document.createElement('span');
+            let figcaption = document.createElement('figcaption');
+            let imgDiv = document.createElement('div');
 
             // Assign values to elements
             section.setAttribute('class', "artwork")
+            imgDiv.setAttribute('class', "art-image");
             img.setAttribute('src', artwork.imageurl);
             img.setAttribute('alt', artwork.name);
+            figcaption.textContent = artwork.name + " by " + artwork.artist;
             div.setAttribute('class', "art-desc");
             h2.textContent = artwork.name;
             h3.textContent = "By: " + artwork.artist;
@@ -198,7 +187,10 @@ function loadArt() {
             separator.innerHTML = "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;";
 
             // Append content to elements
-            section.appendChild(img);
+            imgDiv.appendChild(img);
+            imgDiv.appendChild(figcaption);
+
+            section.appendChild(imgDiv);
 
             div.appendChild(h2);
             div.appendChild(h3);

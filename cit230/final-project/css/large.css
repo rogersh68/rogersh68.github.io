@@ -1,0 +1,21 @@
+@media only screen and (min-width: 64rem) {
+    
+    .navigation li {
+        max-width: 600px;
+        
+    }
+
+    .page-title {
+        max-width: 1170px;
+    }
+
+    .page-content {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    table {
+        margin: 25px auto;
+    }
+    
+}

@@ -1,0 +1,28 @@
+{
+    "guides": [
+        {
+            "name": "Greg Smith",
+            "image": "images/greg.jpg",
+            "level": "4",
+            "years": "3",
+            "email": "greg@salmonriver.com",
+            "sketch": "Greg ..."
+        },
+        {
+            "name": "Joe Johnson",
+            "image": "images/joe.jpg",
+            "level": "4",
+            "years": "4",
+            "email": "joe@salmonriver.com",
+            "sketch": "Joe ..."
+        },
+        {
+            "name": "Bob Sanchez",
+            "image": "images/bob.jpg",
+            "level": "4",
+            "years": "5",
+            "email": "bob@salmonriver.com",
+            "sketch": "Our most experienced guide, Bob knows the ins and outs of the Salmon River. "
+        }
+    ]
+}

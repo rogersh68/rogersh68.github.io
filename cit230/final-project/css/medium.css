@@ -1,0 +1,38 @@
+@media only screen and (min-width: 35rem) {
+   
+    .navigation {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    
+    
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        background-color: #3c493f;
+        margin: 45px auto;
+        
+    }
+    
+    .menu {
+        background-color: #04151F;
+    }
+
+    .page-title {
+        max-width: 500px;
+        margin: -5px auto;
+    }
+
+    .page-content {
+        max-width: 500px;
+        margin: auto;
+    }
+}
