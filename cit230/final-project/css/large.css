@@ -17,5 +17,9 @@
     table {
         margin: 25px auto;
     }
+
+    .contact {
+        max-width: 800px;
+    }
     
 }

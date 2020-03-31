@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salmon River Adventures | Home</title>
+    <title>Salmon River Adventures | Contact Us</title>
 
     <!-- API Links -->
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:700|Roboto&display=swap" rel="stylesheet">
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="scss/small.css">
-    <link rel="stylesheet" href="scss/medium.css">
-    <link rel="stylesheet" href="scss/large.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 
 </head>
 
@@ -45,26 +45,39 @@
     <main>
         <!-- Banner Image -->
         <picture class="banner">
-            <source srcset="images/home-banner800.jpg" media="(min-width: 800px) and (max-width: 1199px)">
-            <source srcset="images/home-banner1200.jpg" media="(min-width: 1200px)">
-            <img src="images/home-banner500.jpg" alt="banner-img">
+            <source srcset="images/contact-banner800.jpg" media="(min-width: 800px) and (max-width: 1199px)">
+            <source srcset="images/contact-banner1200.jpg" media="(min-width: 1200px)">
+            <img src="images/contact-banner500.jpg" alt="banner-img">
         </picture>
 
         <h1 class="page-title">Contact Us:</h1>
+        
+        <div class="contact">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.575081077394!2d-116.3198842848199!3d45.41790754455277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2s1000%20S%20Main%20St%2C%20Riggins%2C%20ID%2083549!5e0!3m2!1sen!2sus!4v1585689115909!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Phone: 999.999.9999</p>
+            <p>Email: support@salmonriver.com</p>
+        </div>
 
         <!-- Contact Form -->
-        <form>
-            
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="email@provider.com" required></label>
+                <label class="top">Comments<textarea name="comments"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Contact Us" class="submitButton">
         </form>
-
-        <!-- Action Call -->
-        <section class="action">
-            <a href="reserve.html">Book Now</a>
-        </section>
+        </div>
 
         <!-- FOOTER -->
         <footer>
-            <div>&copy; 2020 | <a href="contact.html">Contact Us</a> | <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" class="social-media"></a> | <a href="https://www.instagram.com"><img src="images/instagram.png" alt="facebook" class="social-media"></a></div>
+            &copy; 2020 |&nbsp;&nbsp;<a href="contact.html">Contact Us</a> 
+                <div class="social-media-div"><a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" class="social-media"></a> 
+                <a href="https://www.instagram.com"><img src="images/instagram.png" alt="facebook" class="social-media"></a></div>
         </footer>
     </main>
 
