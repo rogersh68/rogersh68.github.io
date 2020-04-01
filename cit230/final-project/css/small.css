@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 
-h1, h2 {
+h1, h2, th {
     font-family: 'Baloo 2', cursive;
 }
 
@@ -127,9 +127,12 @@ table {
     width: 100%;
 }
 
-table h2 {
-    padding-right: 20px;
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .guide-action {
     background-color: #3c493f;
@@ -256,6 +259,8 @@ select {
     border-collapse: collapse;
     margin-top: 20px;
 }
-.reserve th{
+ 
+th{
     font-size: larger;
+    padding: .75rem;
 }
