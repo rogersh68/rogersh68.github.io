@@ -77,7 +77,7 @@ main {
     margin-top: 100px;
 }
 
-.banner {
+.banner img {
     width: 100%;
 }
 
@@ -85,6 +85,7 @@ main {
     background-color: #CC5803;
     padding: 1.5rem 1rem;
     margin: -5px 0px 0px 0px;
+    width: 100%;
 }
 
 .action, .submitButton {

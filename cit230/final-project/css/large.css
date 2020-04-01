@@ -5,10 +5,6 @@
         
     }
 
-    .page-title {
-        max-width: 1170px;
-    }
-
     .page-content {
         max-width: 800px;
         margin: auto;
@@ -20,6 +16,10 @@
 
     .contact {
         max-width: 800px;
+    }
+
+    .banner {
+        margin-top: 0px;
     }
     
 }
