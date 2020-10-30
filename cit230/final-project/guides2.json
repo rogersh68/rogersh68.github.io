@@ -1,0 +1,28 @@
+{
+    "guides": [
+        {
+            "name": "Greg Smith",
+            "image": "https://cdn.glitch.com/a588ec5c-8ffa-4daa-969a-75585c585ba7%2Fgreg.jpg?v=1604079477468",
+            "level": "4",
+            "years": "3",
+            "email": "greg@salmonriver.com",
+            "sketch": "The minute Greg picked up an oar he knew rafting was for him. For three years Greg has spent as much time as he could in the great outdoors and on the river. Greg knows where to find adventure and he will take you there."
+        },
+        {
+            "name": "Joe Johnson",
+            "image": "https://cdn.glitch.com/a588ec5c-8ffa-4daa-969a-75585c585ba7%2Fjoe.jpg?v=1604079523043",
+            "level": "4",
+            "years": "4",
+            "email": "joe@salmonriver.com",
+            "sketch": "Joe has always loved the adventure found in the outdoors. His earliest memories include spending time in nature fishing and rafting. Joe grew up in the area and consequently has a vast knowledge of where to go and what to do. "
+        },
+        {
+            "name": "Bob Sanchez",
+            "image": "https://cdn.glitch.com/a588ec5c-8ffa-4daa-969a-75585c585ba7%2Fbob.jpg?v=1604079372978",
+            "level": "4",
+            "years": "5",
+            "email": "bob@salmonriver.com",
+            "sketch": "Our most experienced guide, Bob knows the ins and outs of the Salmon River. Ask him anything about the Salmon River area and he more than likely has the answer for you. Bob always knows the best routes anywhere on the river."
+        }
+    ]
+}
